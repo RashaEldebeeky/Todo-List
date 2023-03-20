@@ -1,0 +1,22 @@
+header {
+  text-align: center;
+  background-color: #283044;
+  color: #fff;
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  margin: -8px -8px 0 -8px;
+}
+.title {
+  font-size: 2rem;
+  margin: 5px;
+  position: absolute;
+  left: 20px;
+}
+header button {
+  position: absolute;
+  right: 20px;
+}
+.task-list-container {
+  height: 90vh;
+}
