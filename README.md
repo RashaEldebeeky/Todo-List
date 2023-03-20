@@ -10,8 +10,6 @@ clone the repo
 
 Go to your developer folder Clone this project repository to your local machine
 
-cd todolist
-
 npm install
 
 ## serve
