@@ -5,11 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "gh-build": "ng build --configuration github  --base-href=https://rashaeldebeeky.github.io/Todo-List",
+    "gh-build": "ng build --configuration github  --base-href=/Todo-List/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "json-server --watch ./server/database.json",
-    "gh-deploy": " npm run gh-build ; npx angular-cli-ghpages --dir=dist/todolist     "
+    "server": "json-server --watch ./server/database.json"
   },
   "private": true,
   "dependencies": {
