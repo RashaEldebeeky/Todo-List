@@ -3,8 +3,6 @@ name: Github Pages Deploy
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -22,7 +20,7 @@ jobs:
          npm install && npm run gh-build
 
     - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main 
           folder: ./dist/todolist 
