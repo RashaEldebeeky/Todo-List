@@ -8,7 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'My Todo List';
+  title = 'Task List';
 
   constructor(private modalService: NgbModal) {}
 
