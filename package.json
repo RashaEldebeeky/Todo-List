@@ -1,11 +1,11 @@
 {
   "name": "todolist",
   "version": "0.0.0",
-  "homepage": "http://yourgithubname.github.io/yourreponame",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "gh-build": "ng build --configuration github --base-href /todo-list/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "json-server --watch ./server/database.json"
