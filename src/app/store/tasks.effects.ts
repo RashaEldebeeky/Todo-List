@@ -10,6 +10,7 @@ import {
   loadTasksSuccess,
   createTaskSuccess,
   updateTaskSuccess,
+  deleteTaskSuccess,
 } from './tasks.actions';
 import { Task } from '../models/task.model';
 @Injectable()
@@ -48,7 +49,9 @@ export class TasksEffects {
     this.actions$.pipe(
       ofType(deleteTask),
       switchMap(({ task }) =>
-        this.tasksService.deleteTask(task.id).pipe(map(() => loadTasks()))
+        this.tasksService
+          .deleteTask(task.id)
+          .pipe(map(() => deleteTaskSuccess({ task })))
       )
     )
   );
